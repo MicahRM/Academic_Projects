@@ -1,0 +1,123 @@
+.main-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+.left-side {
+    width: 350px;
+    position: fixed;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.search-bar {
+    width: 100%;
+    height: 40px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.location-search {
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    border-radius: 10px;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.location-search::placeholder {
+    color: #82b4ff;
+    font-size: 18px;
+}
+
+.filter-tab {
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.filter {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.double-slider-label {
+    border: 0;
+    color: black;
+    font-size: 18px;
+    background-color: #f3f3f3;
+}
+
+.double-slider {
+    width: 300px;
+    margin-top: 5px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.select{
+    width: 300px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.right-side{
+    width: 100%;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+    position: relative;
+    margin-left: 370px;
+    margin-right: 10px;
+}
+
+.house-display {
+    height: 260px;
+    background-color: white;
+    border: 2px solid #c4c4c4;
+    border-bottom: 4px solid #1c2e4a;
+}
+
+.house-pic {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #1c2e4a;
+}
+
+.house-pic:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.house-info{
+    height: 100%;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    margin: 0 0 0 0;
+}

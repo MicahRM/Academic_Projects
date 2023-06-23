@@ -1,0 +1,33 @@
+.main-content {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border: 2px solid #c4c4c4;
+    z-index: 1;
+}
+
+.subtitle {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    background: #1c2e4a;
+    border-bottom: 2px solid #c4c4c4;
+}
+
+.login-field{
+    font-size: 18px;
+}
+
+.line {
+    border-bottom: 2px solid #c4c4c4;
+}

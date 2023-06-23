@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicaRiYa Real Estate</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/index-style.css">
+</head>
+
+<body onLoad="setMode()">
+    <div class="header">
+        <div class="title-bar">
+            <a class="title" href="index.html">MicaRiYa</a>
+            <div class="signin">
+                <button onclick="account()" class="unselected" id="log" style="font-size: 18px;">Sign in</button>
+            </div>
+        </div>
+        <div class="mode-bar">
+            <button onclick="buy()" class="unselected" id="buy">Buy</button>
+            <button onclick="sell()" class="unselected" id="sell">List</button>
+            <button onclick="rent()" class="unselected" id="rent">Rent</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="main-content">
+            <div style="width: 100%; position: absolute; margin-bottom: 100px;">
+                <img src="images/index.jpg" alt="House" style="width: 100%; height: 580px; object-fit: cover; object-position: 0 0;">
+            </div>
+
+            <div class="search-bar">
+                <div class="logo">Real Estate Simplified</div>
+                <input type="text" class="location-search" id="location" placeholder="Search: Current location" onChange="search()">
+            </div>
+
+            <div class="chat-popup" id="chat-window">
+                <form style="width: 300px; height: 175px;">
+                    <textarea class="chat-text" id="chat-text" onchange="giveAnswer()" placeholder="Type message..."></textarea>
+                </form>
+            </div>
+
+            <div style="font-size: 18px; position: fixed; bottom: 20px; left: 20px;"><a class="chat-link" href="javascript:openChat()">Live chat</a></div>
+        </div>
+    </div>
+
+    <script>
+        var access = false;
+
+        function setMode(){
+            if(localStorage.getItem("log-status") == "in"){
+                document.getElementById("log").innerHTML = "Account";
+                access = true;
+            }else{
+                document.getElementById("log").innerHTML = "Sign in";
+                access = false;
+            }
+        }
+
+        function account(){
+            if(access){
+                window.location.href = "logout.html";
+            }else{
+                window.location.href = "login.html";
+            }
+        }
+
+        function search(){
+            localStorage.setItem("search-location", document.getElementById("location").value);
+            buy();
+        }
+
+        function buy(){
+            localStorage.setItem("new-mode", "buy");
+            window.location.href = "buy.html";
+        }
+
+        function sell(){
+            window.location.href = "sell.html";
+        }
+
+        function rent(){
+            localStorage.setItem("new-mode", "rent");
+            window.location.href = "buy.html";
+        }
+
+        function openChat() {
+            var chat = document.getElementById("chat-window");
+            if(chat.style.display == "block"){
+                chat.style.display = "none";
+            }else{
+                chat.style.display = "block";
+            }
+        }
+
+        function giveAnswer() {
+            document.getElementById("chat-text").value += "\nIncredibly helpful answer"
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+.content {
+    margin-top: 110px;
+}
+
+.search-bar {
+    width: 100%;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.logo {
+    font-size: 48px;
+    color: #1c2e4a;
+    padding-bottom: 100px;
+}
+
+.location-search {
+    width: 700px;
+    height: 40px;
+    margin: auto;
+    border-radius: 10px;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.location-search::placeholder {
+    color: #82b4ff;
+    font-size: 18px;
+}
