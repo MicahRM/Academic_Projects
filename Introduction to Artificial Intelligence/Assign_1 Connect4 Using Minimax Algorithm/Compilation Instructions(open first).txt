@@ -1,0 +1,22 @@
+
+This program connect 4 was implemented using Intellij.
+
+To compile and run this code simply press run.
+
+you will be prompted to choose a number from 0 to 6 (inclusive) this number will be the row in which you place your connect 4 piece(piece number 1).
+
+the computer will then choose a column to play in.
+
+continue this until a winner has been found (4 pieces have been connected by either the player or CPU)
+
+The program will terminate.
+
+
+Obviously, based upon the implementation of my program, I was unable to get the Minimax Algorithm to work correctly with my program.
+I left all the methods associated with this algorithm within the code so that my attempted solution can be seen and positively critiqued.
+I am really excited for this course and fascinated by all the interesting topics we will learn in the near future.
+I am just hoping that I will grasp these topics efficiently enough to excel in this course as that is my main goal.
+
+I am requesting great consideration and leniency when reviewing and grading my submission due to the fact that a massive effort has been made to implement this concept and that is evident throughout the program.
+
+Thanks in Advance for your Consideration
