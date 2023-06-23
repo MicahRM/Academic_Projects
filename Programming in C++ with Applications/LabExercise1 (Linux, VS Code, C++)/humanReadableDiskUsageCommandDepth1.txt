@@ -1,0 +1,17 @@
+0	./.gnome2
+0	./.mozilla
+1.3M	./COSC1P02
+116K	./Lab 1
+344K	./Lab 2
+316K	./Lab 3 and 4
+44K	./Fractions
+12K	./TestFractions1
+12K	./TestFractions2
+156K	./doc
+364K	./Lab 6
+168K	./Lab 7
+32K	./ListOps
+0	./COSC2P95
+175M	./.vscode-server
+0	./2p95
+178M	.
