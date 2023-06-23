@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<drjava version="drjava-20140826-r5761">
+  <project autorefresh="false" build="" root="" work="">
+    <createjar file=""/>
+    <source>
+      <file active="true" name="TestParetoSet/TestParetoSet.java" package="TestParetoSet" timestamp="08-Mar-2020 16:16:11">
+        <select from="1856" to="1856"/>
+        <scroll column="573" row="0"/>
+      </file>
+      <file name="LnkParetoSet.java" package="Pareto" timestamp="08-Mar-2020 15:59:03">
+        <select from="1856" to="1856"/>
+        <scroll column="573" row="0"/>
+      </file>
+      <file name="ParetoSet.java" package="Pareto" timestamp="08-Mar-2020 16:00:40">
+        <select from="1856" to="1856"/>
+        <scroll column="573" row="0"/>
+      </file>
+      <file name="Observation.java" package="Pareto" timestamp="08-Mar-2020 16:01:02">
+        <select from="1856" to="1856"/>
+        <scroll column="573" row="0"/>
+      </file>
+      <file name="UnderflowException.java" package="Pareto" timestamp="08-Mar-2020 16:02:38">
+        <select from="1856" to="1856"/>
+        <scroll column="573" row="0"/>
+      </file>
+      <file name="DimensionalityException.java" package="Pareto" timestamp="08-Mar-2020 16:00:01">
+        <select from="1856" to="1856"/>
+        <scroll column="573" row="0"/>
+      </file>
+      <file name="Node.java" package="Pareto" timestamp="08-Mar-2020 15:59:44">
+        <select from="1856" to="1856"/>
+        <scroll column="573" row="0"/>
+      </file>
+    </source>
+    <included/>
+    <excluded/>
+    <collapsed/>
+    <classpath/>
+    <breakpoints/>
+    <watches/>
+    <bookmarks/>
+    <preferences/>
+  </project>
+</drjava>

@@ -1,0 +1,12 @@
+10	10
+X	X	X	X	X	X	X	X	X	X
+X	X	X	X	X	X	X	X	X	X
+X	X	X	X	X	X	X	X	X	X
+X	X	X	R	I	G	H	T	X	X
+X	X	X	X	X	X	X	X	X	X
+X	X	X	X	X	X	X	X	X	X
+X	X	X	X	X	X	X	X	X	X
+X	X	X	X	X	X	X	X	X	X
+X	X	X	X	X	X	X	X	X	X
+X	X	X	X	X	X	X	X	X	X
+RIGHT

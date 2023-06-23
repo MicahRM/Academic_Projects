@@ -1,0 +1,55 @@
+package TestParetoSet;
+
+import BasicIO.*;
+import java.io.*;
+import Pareto.*;
+
+public class TestParetoSet {
+  
+  private ASCIIDataFile dataFile;
+  private ASCIIDisplayer display;
+  TestParetoSet () {
+    
+    dataFile = new ASCIIDataFile();
+    display = new ASCIIDisplayer();
+    int numberObservation = dataFile.readInt();
+    int numberReading = dataFile.readInt();
+    Observation obs;
+    ParetoSet set = new LnkParetoSet(2);
+    
+    try {
+      set = new LnkParetoSet(2);
+    }
+    catch ( DimensionalityException de ) {
+      System.out.println("ERROR-LnkParetoSet(): parameter is not 2");
+    }
+    for ( int i=1; i<=numberObservation; i++) {
+      obs = new Observation(dataFile, numberReading);
+      try {
+        set.add(obs);
+      }
+      catch ( DimensionalityException de ) {
+        System.out.println("ERROR");
+      }
+    } // if not working, show error 
+    
+    try {
+      set.getBestForIndex (3);
+    }
+    catch ( DimensionalityException de ) {
+      System.out.println("ERROR-getBestForIndex(): Pararmeter for getBestForIndex is not 0 or 1");
+    }
+    try {
+      set.getBestForIndex (0);
+    }
+    catch ( UnderflowException ufe) {
+      System.out.println("ERROR-getBestForIndex(): under");
+    }
+    display.writeLine("Number of observation in the list : " + set.getSize());
+    display.writeLine("Label of observation in the list: " + set.toString());
+    display.writeLine("Best value for a given index is: " + set.getBestForIndex(0).getLabel() + " , " + set.getBestForIndex(0).getReading(0) + " , " + set.getBestForIndex(0).getReading(1));
+  } // constructor
+  
+  public static void main ( String args[] ) { TestParetoSet p = new TestParetoSet(); }
+  
+} // TestParetoSet

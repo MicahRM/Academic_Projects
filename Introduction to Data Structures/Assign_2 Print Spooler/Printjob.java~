@@ -1,0 +1,57 @@
+package Assign_2;
+
+
+/**This class defines the printjob class and all its variables and accessor methods.
+  * Micah Rose-Mighty
+  * 6498935
+  * 2020/02/24
+  */
+
+
+public class Printjob {
+    
+    
+    public  static final String[] PRIORITY = {"Student","Staff","Faculty"}; //String array of the different possible priorities of the sender. 
+    private String  sender;   // name of sender
+    private String  description;   // description of job
+    private int     pages;   // number of pages in the job
+    private int     priority;  // priority of sender
+    
+    
+    public Printjob ( String aDescription, String aSender, int aPages, int aPriority) {
+        
+        description = aDescription;
+        sender = aSender;
+        pages = aPages;
+        priority = aPriority;
+        }
+    
+    public String getSender ( ) {
+        
+        return sender;
+        
+    }  // getSender
+    
+    
+    public String getDescription ( ) {
+        
+        return description;
+        
+    }  // getDescription
+    
+    
+    public int getPriority ( ) {
+        
+        return priority;
+        
+    }  // getCPriority
+    
+    
+    public int getPages ( ) {
+        
+        return pages;
+        
+    } // getPages
+    
+  
+}

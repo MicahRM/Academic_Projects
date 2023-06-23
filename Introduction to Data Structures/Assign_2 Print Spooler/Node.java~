@@ -1,0 +1,19 @@
+package Assign_2;
+
+
+class Node {
+    
+    
+    Person item;   // the person requesting documents to be printed
+    Node  next;  // next node
+    
+    
+    Node ( Person p, Node n ) {
+        
+        item = p;
+        next = n;
+        
+    };  // constructor
+    
+    
+}  //Node
