@@ -1,0 +1,18 @@
+Virus,DNA Virus,RNA Virus
+RNA Virus,Flaviviridae,Filoviridae,Coronaviridae
+Flaviviridae,Flavivirus,Hepacivirus
+Filoviridae,Cuevavirus,Dianlovirus,Ebolavirus,Marburgvirus
+Coronaviridae,Alphacoronavirus,Betacoronavirus,Deltacoronavirus,Gammacoronavirus,Alphaletovirus
+Flavivirus,Zika virus,Yellow fever virus,West Nile virus
+Hepacivirus,GBV-B,hepatitis C virus
+Ebolavirus,Ebola virus,Tai Forest virus,Bombali virus
+Marburgvirus,Marburg virus
+Alphacoronavirus,Hcov-229E,Hcov-NL63
+Betacoronavirus,HCoV-OC43,HCoV-HKU1
+Betacoronavirus,SARS-CoV
+Betacoronavirus,MERS-CoV
+DNA Virus,Adenoviridae,Poxviridae
+Adenoviridae,Mastadenovirus
+Poxviridae,Orthopoxvirus
+Mastadenovirus,Canine hepatitis virus
+Orthopoxvirus,Cowpox virus,Smallpox virus
