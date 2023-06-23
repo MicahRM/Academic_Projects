@@ -1,0 +1,76 @@
+package Assign_4_A;
+
+
+import Media.*;                  // for Picture and PictureDisplayer
+import java.awt.*;               // for Color objects and methods
+import static java.lang.Math.*;  // for math constants and functions
+import static java.awt.Color.*;  // for Color constants
+
+
+/** This class ...
+  *
+  * @author <your name>
+  * @version 1.0 (<date>)                                                        */
+
+public class Negative
+ {
+  PictureDisplayer display;
+  Picture pic;
+  
+  
+  
+    
+    
+    // instance variables
+    
+    
+    /** This constructor ...                                                     */
+    
+    public Negative( ) {
+      display = new PictureDisplayer();
+      pic = new Picture();
+      display.placePicture(pic);
+      
+      display.waitForUser();
+      makeNegative(pic);
+      display.close();
+
+        // local variables
+        
+        // statements including call to method
+        
+    }; // constructor
+    
+    
+    // methods
+    
+    private void makeNegative(Picture aPic){
+      Pixel pixel;
+      int r;
+      int g;
+      int b;
+      
+      while(aPic.hasNext()){
+        pixel = aPic.next();
+        g = (int)(pixel.getGreen()*-1);
+        pixel.setGreen(g);
+        b = (int)(pixel.getBlue()*-1);
+        pixel.setBlue(b);
+        r = (int)(pixel.getRed()*-1);
+        pixel.setRed(r);
+        
+      }
+    }
+    
+   
+    
+    
+    
+
+    
+    
+    public static void main ( String[] args ) { Negative s = new Negative(); };
+    
+    
+} // Negative
+

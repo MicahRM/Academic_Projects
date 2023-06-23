@@ -1,0 +1,82 @@
+package Assign_4_B;
+
+
+import Media.*;                  // for Picture and PictureDisplayer
+import java.awt.*;               // for Color objects and methods
+import static java.lang.Math.*;  // for math constants and functions
+import static java.awt.Color.*;  // for Color constants
+
+
+/** This class ...
+  *
+  * @author Micah Rose-Mighty
+  * @version 1.0 (2018/11/02)                                                        */
+
+public class Brightenl
+ {
+  PictureDisplayer display;
+  Picture pic;
+  
+  
+  
+    
+    
+    // instance variables
+    
+    
+    /** This constructor ...                                                     */
+    
+    public Brightenl( ) {
+      display = new PictureDisplayer();
+      pic = new Picture();
+      display.placePicture(pic);
+      
+      display.waitForUser();
+      normIntensity(pic);
+      display.close();
+
+        // local variables
+        
+        // statements including call to method
+        
+    }; // constructor
+    
+    
+    // methods
+    
+    private void normIntensity(Picture aPic){
+      Pixel pixel;
+      int g;
+      int b;
+      int r;
+      while(aPic.hasNext()){
+        pixel = aPic.next();
+        g = pixel.getGreen()*2;
+        pixel.setGreen(maxChannel(g));
+        b = pixel.getBlue()*2;
+        pixel.setBlue(maxChannel(b));
+        r = pixel.getRed()*2;
+        pixel.setRed(maxChannel(r));
+      }
+    }
+    
+    private int maxChannel (int val){
+      if(val>255){
+        return 255;
+      }
+      else{
+        return val;
+      }
+    }
+    
+    
+    
+
+    
+    
+    public static void main ( String[] args ) { Brightenl s = new Brightenl
+(); };
+    
+    
+} // <Sunrise
+
